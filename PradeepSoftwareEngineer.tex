@@ -23,7 +23,7 @@
 \documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
 
 \include{structure} % Include structure.tex which contains packages and document layout definitions
-
+\addtolength{\topmargin}{-10pt}
 \hyphenation{Some-long-word} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
 
 \begin{document} 
@@ -32,7 +32,7 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\maintitle{Pradeep Nagaraju}\\ % \bull% Your name and date of birth or subtitle
+\maintitle{Pradeep Nagaraju} {} % \bull% Your name and date of birth or subtitle
 
 \noindent\href{mailto:pradipbn@gmail.com}{pradipbn@gmail.com}\bull % Your email address
 \textsmaller{+}1 (716) 445-7281\\%\bull smith01 \textit{(Skype)}\bull % Your phone number(s) and Skype username
@@ -73,11 +73,10 @@
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {\href{http://www.qca.qualcomm.com}{Qualcomm Atheros Inc.}}
-{\textsc{San Jose, California}}
-
+{\textsc{San Jose, California}}{}
 \headedsubsection % Job title entry for the current employer
-{\textsc{Senior Engineer}} {August '11 -- current}
-{\bodytext
+{\textsc{Senior Engineer}} {August '11 -- current} {}
+\bodytext
   {\begin{itemize}
 	\item Developed logging infrastructure for crunching Wifi protocol and chipset level statistics
 	\item Designed and implemented characterization/ tagging of multimedia streams in Linux %\textit{(TCP/IP stack)}
@@ -95,64 +94,53 @@
 %{Chief Technology Officer}
 %{Oct '11 -- present}
 %{\bodytext{Joined the \acr{C}-family to make \href{http://www.mostfit.org}{Mostfit} the nr.1 software solution for micro credit lenders around the globe.}}
-}
 
 %------------------------------------------------
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {\href{http://www.ece.neu.edu/wineslab/}{University at Buffalo}}
-{\textsc{Buffalo, \acr{NY}, \acr{USA}}} {
-
+{\textsc{Buffalo, \acr{NY}, \acr{USA}}} {}
   \headedsubsection % Job title entry for the current employer
-  {\textsc{Research Assistant}} {May '09 -- Jun '11}
-  {\bodytext
+  {\textsc{Research Assistant}} {May '09 -- Jun '11} {}
+	\bodytext
 	{
 	  \begin{itemize}
-		\item Developed multi-threaded python based prototype of cognitive radio cross-layer algorithm on Software defined Radio
+		\item Developed multi-threaded python based prototype of cognitive radio cross-layer algorithm
 		\item Developed a Physical layer algorithm for characterized the ionosphere \textit{(Chirpsounder)}
 		\item Prototyped the chirpsounder using C++ and multi-threading on a software-defined-Radio platform
 	  \end{itemize}
 	}
   %{\bodytext{Dharma Publishing, the worlds largest Buddhist publisher, is a non-profit, all-volunteer organization that helps to preserve Tibetan Buddhism and culture. I build them a \href{http://www.dharmapublishing.com}{web store}, and moved the infrastructure of all their web media to a nearly zero maintenance setup that they can maintain themselves.}}
-  }
-}
 
 %------------------------------------------------
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {\href{http://www.accenture.com/}{Accenture Services Pvt Ltd.}}
-{\textsc{Bangalore, India}} {
-
+{\textsc{Bangalore, India}} {}
   \headedsubsection % Job title entry for the current employer
-  {Software Engineer} {July '07 -- Dec '08}
-  {
+  {Software Engineer} {July '07 -- Dec '08} {}
 	\bodytext
 	{
 	  \begin{itemize}
 		\item Developed Java middleware (CORBA/ Web-service) components for e-commerce solutions
 	  \end{itemize}
 	}
-  }
-}
 
 %------------------------------------------------
-
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{IEEE- ROBOMSR: Robotics club} {\textsc{Msrit, Bangalore, India}}{
+{IEEE- ROBOMSR: Robotics club}
+{\textsc{Msrit, Bangalore, India}} {}
   \headedsubsection % Job title entry for the current employer
-  {\textsc{Founder and President}} {Feb '05 -- Jun '07}
-  {
+  {Founder and President} {Feb '05 -- Jun '07} {}
 	\bodytext {
 	  \begin{itemize}
 		\item R\&D on robotic assistants, link for demos on YouTube: \href{http://bit.ly/1EcH739}{Video1}, \href{http://bit.ly/1H77MvW} {Video2}
-		  \item Designed and developed the robotics development platform for students and workshops
-		  \item Developed a proof-of-concept of Automatic Segregation Vehicle
-		  \item Conducted robotics workshop along with a team of 25 and mentored 75 undergrads
+		\item Designed and developed the robotics development platform for students and workshops
+		\item Developed a proof-of-concept of Automatic Segregation Vehicle
+		\item Conducted robotics workshop along with a team of 25 and mentored 75 undergrads
 	  \end{itemize}
 	}
-  }
-}
-
+  
 %------------------------------------------------
 
 %\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
@@ -204,7 +192,7 @@
 
   \headedsubsection % Job title entry for the current employer
 	{The State University of New York, \textit{University at Buffalo}} 
-	{Jan '09 -- Jun '11} { }
+	{Jan '09 -- Jun '11} {}
 }
 
 %------------------------------------------------
@@ -231,9 +219,9 @@
   {Algorithms- \textit{Part II (by Princeton's Robert Sedgewick and Kevin Wayne)}}
   {} {
 	\\
-  	\bull \textsc{dfs \bull bfs \bull minimum spanning tree \bull shortest paths
+  	\bull \textsc{dfs/ bfs \bull minimum spanning tree \bull shortest paths
 	\bull maximum flow \bull radix sorts\\
-	\bull tries \bull substring search}
+	\bull tries  \bull substring search}
   }
 }
 
