@@ -4,6 +4,7 @@
 #include <cstdio>
 #include <cstring>
 #include <iostream>
+#include <string>
 using namespace std;
 
 struct Word
@@ -20,6 +21,7 @@ struct Word
 static std::vector<Word*> s_wordsArray;
 static Word s_word;
 static int s_totalFound;
+static string searchString;
 
 
 // Worker thread: consume words passed from the main thread and insert them
@@ -39,6 +41,7 @@ static void workerThread ()
     if (s_word.data[0]) // Do we have a new word?
     {
       Word * w = new Word(s_word); // Copy the word
+      cout << w->data << endl;
       
       endEncountered = std::strcmp( s_word.data, "end" ) == 0;
 
@@ -58,7 +61,11 @@ static void workerThread ()
         }
 
         if (!found)
-          s_wordsArray.push_back( w );
+            cout << "Appending to string" << endl;
+          searchString = "";
+          searchString.append(w->data);
+        cout << searchString << endl;
+         // s_wordsArray.push_back( w );
       }
     }
   }
@@ -103,7 +110,7 @@ static void readInputWords ()
  */
 static void lookupWords ()
 {
-  bool found;
+  //bool found;
   char * linebuf = new char[32];
     
   for(;;)
@@ -117,7 +124,7 @@ static void lookupWords ()
     //std::strcpy( w->data, linebuf );
 
     // Search for the word
-    unsigned i;
+    /*unsigned i;
     for ( i = 0; i < s_wordsArray.size(); ++i )
     {
       if (std::strcmp( s_wordsArray[i]->data, w->data ) == 0)
@@ -125,13 +132,17 @@ static void lookupWords ()
         found = true;
         break;
       }
-    }
+    }*/
+    size_t found = searchString.find(w->data, 0, 5);
+    cout << searchString << endl;
+    cout << found <<"," << string(w->data, 0 , 5) << endl;
 
-    i--;
-    if (found)
+    //i--;
+    if (found != string::npos)
     {
-      std::printf( "SUCCESS: '%s' was present %d times in the initial word list\n",
-                   s_wordsArray[i]->data, s_wordsArray[i]->count );
+        cout << "SUCCESS" << endl;
+      //std::printf( "SUCCESS: '%s' was present %d times in the initial word list\n",
+       //            s_wordsArray[i]->data, s_wordsArray[i]->count );
       ++s_totalFound;
     }
     else
