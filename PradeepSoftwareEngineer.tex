@@ -23,7 +23,8 @@
 \documentclass[10pt,a4paper]{article} % Font size (10-12pt) and paper size (a4paper, letterpaper, legalpaper, etc)
 
 \include{structure} % Include structure.tex which contains packages and document layout definitions
-
+\addtolength{\topmargin}{-30pt}
+\addtolength{\textheight}{50pt}
 \hyphenation{Some-long-word} % Specify custom hyphenation points in words with dashes where you would like hyphenation to occur, or alternatively, don't put any dashes in a word to stop hyphenation altogether
 
 \begin{document} 
@@ -32,57 +33,61 @@
 %	NAME AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\maintitle{Pradeep Nagaraju}\\ % \bull% Your name and date of birth or subtitle
+\maintitle{Pradeep Nagaraju} {} % \bull% Your name and date of birth or subtitle
 
-\noindent\href{mailto:pradipbn@gmail.com}{pradipbn@gmail.com}\bull % Your email address
-\textsmaller{+}1 (716) 445-7281\\%\bull smith01 \textit{(Skype)}\bull % Your phone number(s) and Skype username
+\noindent {\href{mailto:pradeepbnagaraju@gmail.com}{pradeepbnagaraju@gmail.com}}\bull{\href{http://pradeepbn.me}http://pradeepbn.me}\bull{\textsmaller{+}1 (716)445-7281}\bull{San Jose, CA}%\bull smith01 \textit{(Skype)}\bull % Your phone number(s) and Skype username
 %\href{http://www.johnsmith.com}{www.johnsmith.com}\\ % Your URL
-1884 Tradan Dr., San Jose, CA -95132
 
-\spacedhrule{0.9em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
 %----------------------------------------------------------------------------------------
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 
-\roottitle{Summary} % Root section title
-
-%\vspace{-1.3em} % Reduce whitespace after the Summary heading and the two-column content
-
-%\begin{multicols}{1}  % Start a two-column layout
-%\noindent \textit{A summary of your interests, achievements, history, topic of study or any other short summary of your professional life.}\\\\
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis scelerisque vestibulum. Sed ut sapien et dui mollis condimentum. Phasellus enim lectus, dignissim vitae velit sit amet, porttitor tincidunt lectus. Vivamus adipiscing volutpat lacinia. Sed dui ipsum, iaculis id facilisis sed, dapibus quis lacus. Quisque blandit hendrerit malesuada. Nunc sollicitudin nisl nunc, vitae luctus leo tincidunt vel.
-
-%Pellentesque bibendum convallis adipiscing. Suspendisse facilisis id massa a lacinia. Nullam odio nibh, placerat at fermentum in, tincidunt eu ipsum. Nullam adipiscing lacus id dui suscipit commodo. Vestibulum iaculis leo imperdiet, porta lorem eu, tempus tortor. Donec interdum risus ullamcorper, vestibulum nulla ut, tincidunt ante. Duis adipiscing auctor nisi, quis tempor tortor ornare aliquet. Aenean at tempor leo. Nam eleifend venenatis elit id aliquet. Mauris quis lacinia dolor, a posuere tellus. Suspendisse nec augue pretium, condimentum risus vitae, dignissim tellus. Proin gravida ante eget massa lacinia consequat. Integer pharetra vel ligula sed vulputate. Integer eget erat quam. Proin adipiscing lorem ac purus adipiscing, non ullamcorper nisi porttitor. 
-  %\SpecialItem
-\bodytext {
-  \begin{itemize}
-	\item Working knowledge of parallel programming and multi-threading using POSIX API
-	\item Good understanding of data structures and algorithms that is required to solve most common problems
-	\item Design experience in modular device driver and software architecture for performance/ power
-  \end{itemize}}
-%\end{multicols}
-
-\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+%\roottitle{Summary} % Root section title
+%
+%%\vspace{-1.3em} % Reduce whitespace after the Summary heading and the two-column content
+%
+%%\begin{multicols}{1}  % Start a two-column layout
+%%\noindent \textit{A summary of your interests, achievements, history, topic of study or any other short summary of your professional life.}\\\\
+%%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis scelerisque vestibulum. Sed ut sapien et dui mollis condimentum. Phasellus enim lectus, dignissim vitae velit sit amet, porttitor tincidunt lectus. Vivamus adipiscing volutpat lacinia. Sed dui ipsum, iaculis id facilisis sed, dapibus quis lacus. Quisque blandit hendrerit malesuada. Nunc sollicitudin nisl nunc, vitae luctus leo tincidunt vel.
+%
+%%Pellentesque bibendum convallis adipiscing. Suspendisse facilisis id massa a lacinia. Nullam odio nibh, placerat at fermentum in, tincidunt eu ipsum. Nullam adipiscing lacus id dui suscipit commodo. Vestibulum iaculis leo imperdiet, porta lorem eu, tempus tortor. Donec interdum risus ullamcorper, vestibulum nulla ut, tincidunt ante. Duis adipiscing auctor nisi, quis tempor tortor ornare aliquet. Aenean at tempor leo. Nam eleifend venenatis elit id aliquet. Mauris quis lacinia dolor, a posuere tellus. Suspendisse nec augue pretium, condimentum risus vitae, dignissim tellus. Proin gravida ante eget massa lacinia consequat. Integer pharetra vel ligula sed vulputate. Integer eget erat quam. Proin adipiscing lorem ac purus adipiscing, non ullamcorper nisi porttitor. 
+%  %\SpecialItem
+%\bodytext {
+%  \begin{itemize}
+%	\item Working knowledge of parallel programming and multi-threading using POSIX API
+%	\item Good understanding of data structures and algorithms that is required to solve most common problems
+%	\item Design experience in modular device driver and software architecture for performance/ power
+%  \end{itemize}
+%}
+%
+%%\end{multicols}
+%
+%\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
 \roottitle{Experience} % Top level section
-
+\inlineheadsection{Strengths:}{6+ years of experience in software design, development and large scale deployment}
+\vspace{-0.65em}
+\inlineheadsection{Keywords:}{C/C++/Python/Java, algorithms, data-structures, device driver, multi-threading, all things linux}
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {\href{http://www.qca.qualcomm.com}{Qualcomm Atheros Inc.}}
-{\textsc{San Jose, California}}
-
-\headedsubsection % Job title entry for the current employer
-{\textsc{Senior Engineer}} {August '11 -- current}
-{\bodytext
+{\textsc{\textbf{Senior Software Engineer}}}{August '11 -- current}
+\vspace{-1.0em}
+\inlineheadsection{[Hold 2 Patents]}{}
+\vspace{-0.2em}
+\bodytext
   {\begin{itemize}
-	\item Developed logging infrastructure for crunching Wifi protocol and chipset level statistics
-	\item Designed and implemented characterization/ tagging of multimedia streams in Linux %\textit{(TCP/IP stack)}
-	\item Designed low power algorithm that could achieve 30\% power reduction in normal mobile Wifi operations \textit{(This is currently operational on leading flagship products  like Xiomi Note, LG G3, HTC M9, Motorola)}
-	\item Worked on optimizing performance/ memory in TX/RX data path
+	\item Designed QPower algorithm --auto-regressive statistical model-- for idle time estimation; reduced power consumption by 30\% 
+	\item Productized QPower successfully on millions of Qualcomm's leading snapdragon platforms
+	\item Implemented ubiquitous logging framework on linux driver for wireless protocol and performance data
+	\item Developed software algorithm for on-demand data bandwidth selection; improved data-rates by 20\%
+	\item Implemented linux ethernet driver add-on for characterizing and tagging of multimedia streams%\textit{(TCP/IP stack)}
+	\item Worked on profiling \& optimizing systems resources; CPU, memory, power
 \end{itemize}}
 %{\bodytext{Intellecap is a social-sector advisory firm serving corporates, non-profits, development agencies and governments working in developing markets. I assessed their software development team and methodologies, trained their developers and build several web applications. One of those apps is \href{http://www.mostfit.org}{Mostfit}, an open source \acr{MIS} for \href{http://en.wikipedia.org/wiki/Microcredit}{microcredit} lenders.}}
 
@@ -95,65 +100,79 @@
 %{Chief Technology Officer}
 %{Oct '11 -- present}
 %{\bodytext{Joined the \acr{C}-family to make \href{http://www.mostfit.org}{Mostfit} the nr.1 software solution for micro credit lenders around the globe.}}
-}
 
 %------------------------------------------------
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {\href{http://www.ece.neu.edu/wineslab/}{University at Buffalo}}
-{\textsc{Buffalo, \acr{NY}, \acr{USA}}} {
-
-  \headedsubsection % Job title entry for the current employer
-  {\textsc{Research Assistant}} {May '09 -- Jun '11}
-  {\bodytext
+{\textsc{\textbf{Software Developer- Algorithms}}} {May '09 -- Jun '11}
+	\bodytext
 	{
 	  \begin{itemize}
-		\item Developed multi-threaded python based prototype of cognitive radio cross-layer algorithm on Software defined Radio
-		\item Developed a Physical layer algorithm for characterized the ionosphere \textit{(Chirpsounder)}
-		\item Prototyped the chirpsounder using C++ and multi-threading on a software-defined-Radio platform
+		\item Developed Python based algorithm for ad-hoc-distributed, joint routing and spectrum allocation protocol
+		\item Developed algorithm for real-time cross correlation of the data sets to characterize ionospheric properties
+		%\item Developed C++ multi-threaded DSP software library for ionospheric characterization PHY algorithm
 	  \end{itemize}
 	}
   %{\bodytext{Dharma Publishing, the worlds largest Buddhist publisher, is a non-profit, all-volunteer organization that helps to preserve Tibetan Buddhism and culture. I build them a \href{http://www.dharmapublishing.com}{web store}, and moved the infrastructure of all their web media to a nearly zero maintenance setup that they can maintain themselves.}}
-  }
-}
 
 %------------------------------------------------
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {\href{http://www.accenture.com/}{Accenture Services Pvt Ltd.}}
-{\textsc{Bangalore, India}} {
-
-  \headedsubsection % Job title entry for the current employer
-  {Software Engineer} {July '07 -- Dec '08}
-  {
+{\textsc{\textbf{Software Engineer}}} {July '07 -- Dec '08}
 	\bodytext
 	{
 	  \begin{itemize}
 		\item Developed Java middleware (CORBA/ Web-service) components for e-commerce solutions
 	  \end{itemize}
 	}
-  }
-}
 
-%------------------------------------------------
+\spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{IEEE- ROBOMSR: Robotics club} {\textsc{Msrit, Bangalore, India}}{
-  \headedsubsection % Job title entry for the current employer
-  {\textsc{Founder and President}} {Feb '05 -- Jun '07}
-  {
-	\bodytext {
-	  \begin{itemize}
-		\item R\&D on robotic assistants, link for demos on YouTube: \href{http://bit.ly/1EcH739}{Video1}, \href{http://bit.ly/1H77MvW} {Video2}
-		  \item Designed and developed the robotics development platform for students and workshops
-		  \item Developed a proof-of-concept of Automatic Segregation Vehicle
-		  \item Conducted robotics workshop along with a team of 25 and mentored 75 undergrads
+%----------------------------------------------------------------------------------------
+%	TODO PORTFOLIO PROJECTS
+%----------------------------------------------------------------------------------------
+
+\roottitle{Personal Projects- \href{http://bit.ly/1GbcgAp}{http://bit.ly/1GbcgAp} (Github)} % Top level section
+%\headedsection {}{}{}
+%\begin{itemize}
+\headedsubsection{\textsc{Machine Learning:}}{}{}
+    \bodytext {
+      \begin{itemize}
+		\item \textsc{8-puzzle game solver}-Engine that uses A* algorithm to solve the puzzle in minimum number of moves
+        \item Library API to find the nearest neighbor and radius search for prediciting and completing a given pattern
+        \item Unsupervised algorithm for clustering the data into a set of collinear points used in pattern recognition
+      \end{itemize}
+    }
+%\headedsubsection{\textsc{Tools:}}{}{}
+%    \bodytext {
+%      \begin{itemize}
+%      \end{itemize}
+%    }
+\headedsubsection{\textsc{Natural Language Processing:}}{}{}
+    \bodytext {
+      \begin{itemize}
+		\item Built ``WordNet'' graphDB and outcast algorithm to categorize the keywords into context aware groups
 	  \end{itemize}
-	}
-  }
-}
+    }
+\headedsubsection{\textsc{Graphics Processing:}}{}{}
+    \bodytext {
+      \begin{itemize}
+        \item Smart image-resizing utility that intelligently purges the pixels without impacting the image perception
+      \end{itemize}
+    }
+%\end{itemize}
+%  \begin{itemize}
+%	\item \textsc{\textbf{8 Puzzle Game Solver:}} On a 3X3 tile grid, numbers between 1\&8 along with a blank space are arranged randomly. The goal of the solver is to arrange these tiles in ascending order with the blank space occupying the last tile in minimum number of moves; the solver was developed using the A* algorithm 
+%	\item \textsc{\textbf{Nearest neighbor/ Range search:}} In a set of points on the 2D plane, the algorithm can locate the nearest neighbors for a given point. It can also search the points in the sub-space encompassed by polygonal boundaries. This algorithm runs in O(log(N)) time, where N is the number of points in the set.
+%	\item \textsc{\textbf{Pattern Recognition:}} In a given set of points, this algorithm recognizes pattern of non-overlapping line segments that have atleast 4 collinear points. It takes O(Nlog(N)); where N is the number of points. This is used in computer vision technology to identify patterns in the image.
+%	\item \textsc{\textbf{Percolation:}} In applications where it is required to know if there is connection between different layers, then this algorithm using union-find data structure helps to find out that such a path exists in O(1).
+%	\item \textsc{\textbf{Wordnet:}} Forms groups amongst the words in a given dictionary which have similar characteristics. In a given set of words, the outcast in the group can be identified in O(N)- where N is the number of words 
+%	\item \textsc{\textbf{Seam Carving:}} Smart image resizing utility that purges pixels in the image and reduces its size without quality compromise
+%  \end{itemize}
 
-%------------------------------------------------
+
 
 %\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 %{\href{http://www.opendream.th}{Opendream}}
@@ -174,37 +193,58 @@
 %------------------------------------------------
 
 \spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
-
-
 %----------------------------------------------------------------------------------------
-%	TODO PORTFOLIO PROJECTS
+%	SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\roottitle{Portfolio Projects} % Top level section
-\headedsection {\href{http://bit.ly/1IKq0Tx}{Github}}{
-  \begin{itemize}
-	\item Designed and implemented 8-puzzle game using A* algorithm
-	\item Developed the nearest neighbor search and range search using KD trees
-	\item Pattern recognition algorithm for finding the 4 or more collinear points in a very large set of points
-	\item Built a Monte-Carlo simulator for finding the percolation threshold in a N x N grid using union-find
-	\item \textsc{Wordnet:} Forms groups amongst the words in a given dictionary which have similar characteristics%- e.g., tiger, lion belongs to animals wheras New York, San Fransisco belongs to cities
-	\item \textsc{Seam Carving:} Smart image resizing utility that purges pixels in the image without quality compromise
-  \end{itemize}
-}
+\roottitle{Skills} % Top level section
+
+\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+{Programming languages and scripting:} {C/C++, Python, Java, UNIX shell scripting}
+\inlineheadsection{Operating systems:} {Linux kernel internals, multi-threading, System level programming \textit{(POSIX API)}}
+\inlineheadsection{Tools, Debugger:} {GIT, perforce, GNUMake, GDB, JTAG}
+%\inlineheadsection{Tools, Debugger:} {busybox, GNUMake, GIT, Perforce, Oscilloscope, GDB, JTAG, Ubuntu dev platform}
+{}
+%------------------------------------------------
+
+%\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
+%{Natural languages:}
+%{Dutch \textit{(mother tongue)}, English \textit{(full professional proficiency)}, German \textit{(limited working proficiency)}, French \textit{(elementary proficiency)} and Mandarin Chinese \textit{(beginner)}.}
+%
+%------------------------------------------------
 
 \spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
+
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \roottitle{Education} % Top level section
 
 \headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+{\textsc{Coursera}} {} {
+  \headedsubsection % Job title entry for the current employer
+  {Algorithms- \textit{Part I, II (by Princeton's Robert Sedgewick and Kevin Wayne)}}
+  {} {
+	\\
+	%\bull \textsc{data structures} \bull \textsc{sort} \bull \textsc{search} \bull \textsc{trees} \bull \textsc{balanced trees} \bull \textsc{kd-trees} \bull \textsc{hash tables}
+  }\vspace{-1.0em}
+%  \headedsubsection % Job title entry for the current employer
+%  {Algorithms- \textit{Part II (by Princeton's Robert Sedgewick and Kevin Wayne)}}
+%  {} {
+%	%\\
+%  	%\textsc{\bull graphs \bull minimum spanning tree \bull shortest paths
+%	%\bull radix sorts \bull tries  \bull substring search}
+%  }
+}
+
+%------------------------------------------------
+\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
 {\textsc{Master of Science}}
 {\textsc{Buffalo, NY}} {
 
   \headedsubsection % Job title entry for the current employer
 	{The State University of New York, \textit{University at Buffalo}} 
-	{Jan '09 -- Jun '11} { }
+	{Jan '09 -- Jun '11} {}
 }
 
 %------------------------------------------------
@@ -218,61 +258,35 @@
 }
 
 %------------------------------------------------
-
-\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
-{\textsc{Coursera}} {\textsc{Online}} {
-  \headedsubsection % Job title entry for the current employer
-  {Algorithms- \textit{Part I (by Princeton's Robert Sedgewick and Kevin Wayne)}}
-  {} {
-	\\
-	\bull data structures \bull sort \bull search \bull trees
-	\bull balanced trees \bull kd-trees \bull hash tables
-  }
-  \headedsubsection % Job title entry for the current employer
-  {Algorithms- \textit{Part II (by Princeton's Robert Sedgewick and Kevin Wayne)}}
-  {} {
-	\\
-  	\bull dfs \bull bfs \bull minimum spanning tree \bull shortest paths
-	\bull maximum flow \bull radix sorts\\
-	\bull tries \bull substring search
-  }
-}
-
-%------------------------------------------------
 \spacedhrule{0.5em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
-
-%----------------------------------------------------------------------------------------
-%	SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\roottitle{Skills} % Top level section
-
-\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
-{Programming languages and scripting:} {C/C++, Python, UNIX shell scripting}
-\inlineheadsection{Operating systems:} {Linux kernel internals, multi-threading, System level programming \textit{(POSIX API)}}
-\inlineheadsection{Tools, Debugger:} {busybox, GNUMake, cmake, GIT, Perforce, Oscilloscope, GDB, JTAG, Ubuntu dev platform}
-{}
-%------------------------------------------------
-
-%\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
-%{Natural languages:}
-%{Dutch \textit{(mother tongue)}, English \textit{(full professional proficiency)}, German \textit{(limited working proficiency)}, French \textit{(elementary proficiency)} and Mandarin Chinese \textit{(beginner)}.}
-%
-%------------------------------------------------
-
-\spacedhrule{1.6em}{-0.4em} % Horizontal rule - the first bracket is whitespace before and the second is after
 
 %----------------------------------------------------------------------------------------
 %	VOLUNTEERING SECTION
 %----------------------------------------------------------------------------------------
 
-\roottitle{Voluteering Activities} % Top level section
+\roottitle{Associations and Activities} % Top level section
 {
+	\inlineheadsection{}{Currently serving as a mentor of ROBOMSR robotics club to help students build smart robots}
+	\vspace{-0.5em}
+	\inlineheadsection{}{Contributed as a judge in design reviews of robots at U. C. Berkeley PIE robotics club}
+	\vspace{0.5em}
+      
+	\headedsection % Employer name which can include a hyperlink and location/URL on the right side of the page
+	{\hspace{0.15cm}Founder and President}
+{\textsc{IEEE- ROBOMSR: Robotics Club}} {Feb '05 -- Jun '07}
+	\bodytext {
+	  \begin{itemize}
+		\item R\&D on robotic assistants, link for demos on YouTube: \href{http://bit.ly/1EcH739}{Video1}, \href{http://bit.ly/1H77MvW} {Video2}
+		%\item Designed and developed the robotics development platform for students and workshops
+		%\item Developed a proof-of-concept of Automatic Segregation Vehicle
+		\item Conducted robotics workshop along with a team of 25 and mentored 75 undergrads
+	  \end{itemize}
+	}
 %\headedsection {}{
-  \begin {itemize} 
-	\item Currently serving as a mentor of ROBOMSR robotics club to help students build smart robots
-	\item Contributed as a judge in design reviews of robots at U. C. Berkeley PIE robotics club
-	\end{itemize}
+  %\begin {itemize} 
+  %  \item Currently serving as a mentor of ROBOMSR robotics club to help students build smart robots
+  %  \item Contributed as a judge in design reviews of robots at U. C. Berkeley PIE robotics club
+  %\end{itemize}
 %}
 }
 %\inlineheadsection % Special section that has an inline header with a 'hanging' paragraph
